@@ -20,24 +20,38 @@ The Discord AutoMod badge recognizes bots that have implemented Discord's Auto M
 
 ### Installation
 
-1. **Clone or download this repository**
+1. **Clone the repository**
    ```bash
    git clone https://github.com/odinfov/Automod-Badge.git
-   cd Auto-Mod-Badge
+   cd Automod-Badge
    ```
 
 2. **Install dependencies**
    ```bash
    npm install
    ```
+   This will install all required packages including Discord.js and other dependencies.
 
-3. **Configure your bot**
-   - Update your `config.json` with your bot's token and other settings
-   - Set up MongoDB connection in your configuration
+3. **Set up environment variables**
+   - Create a `.env` file in the root directory
+   - Add your Discord bot token: `DISCORD_TOKEN=your_token_here`
+   - Configure MongoDB URI: `MONGODB_URI=your_mongodb_connection_string`
+   - Set your bot's command prefix: `PREFIX=!`
 
-4. **Integrate the automod rules**
-   - Include `automodrules.js` in your bot's command handler
-   - Ensure the command is properly loaded in your bot's command structure
+4. **Configure your bot settings**
+   - Update the `config.json` file with your bot token, guild ID, and other bot settings
+   - Ensure your bot has the necessary permissions (Manage Channels, Manage Roles, Moderate Members)
+
+5. **Integrate the AutoMod rules**
+   - Import `automodrules.js` into your main bot file or command handler
+   - Register the command in your bot's command structure
+   - Ensure the module is properly loaded when your bot starts
+
+6. **Start your bot**
+   ```bash
+   node index.js
+   ```
+   (or however you normally start your bot)
 
 ### Using the Command
 
