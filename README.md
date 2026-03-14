@@ -22,7 +22,7 @@ The Discord AutoMod badge recognizes bots that have implemented Discord's Auto M
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/odinfov/Automod-Badge.git
+   git clone https://github.com/clydofc/Automod-Badge.git
    cd Automod-Badge
    ```
 
